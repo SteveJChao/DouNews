@@ -5,11 +5,15 @@ import android.content.Intent;
 import android.os.Build;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.example.a15616.tablayout.adpter.MyFragmentStatePagerAdapter;
 import com.example.a15616.tablayout.fragment.ListFragment;
@@ -25,7 +29,10 @@ public class MainActivity extends AppCompatActivity {
 
     private ViewPager mViewPager;
 
-    private Button button;
+    private ImageButton startMenu;
+
+    private DrawerLayout mDrawerLayout;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,9 +43,16 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         mViewPager = (ViewPager) findViewById(R.id.view_pager);
+        startMenu = (ImageButton) findViewById(R.id.menu);
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.main_drawer);
         initViewPager();
 
-
+        startMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mDrawerLayout.openDrawer(GravityCompat.START);
+            }
+        });
     }
 
     public void initViewPager() {
@@ -72,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
         mTabLayout.setTabsFromPagerAdapter(mFragmentStatePagerAdapter);
     }
 
-    public void startIntent() {
+    public void startActivity() {
         Intent intent = new Intent(MainActivity.this, DetailActivity.class);
         startActivity(intent);
     }

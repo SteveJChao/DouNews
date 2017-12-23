@@ -19,10 +19,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.VideoActivity"
-            android:label="@string/title_activity_video"
-            android:theme="@style/AppTheme" />
-        <activity
             android:name=".activity.DetailActivity"
             android:label="@string/title_activity_detail"
             android:theme="@style/AppTheme"></activity>

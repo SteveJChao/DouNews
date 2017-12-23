@@ -2,6 +2,7 @@ package com.example.a15616.tablayout.fragment;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -12,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.a15616.tablayout.R;
+import com.example.a15616.tablayout.activity.DetailActivity;
 import com.example.a15616.tablayout.activity.MainActivity;
 import com.example.a15616.tablayout.adpter.RecyclerViewAdapter;
 
@@ -35,5 +37,10 @@ public class ListFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(mRecyclerView.getContext()));
         mRecyclerView.setAdapter(new RecyclerViewAdapter(getActivity(), getActivity()));
+    }
+
+    public void startIntent() {
+        Intent intent = new Intent(getActivity(), DetailActivity.class);
+        startActivity(intent);
     }
 }

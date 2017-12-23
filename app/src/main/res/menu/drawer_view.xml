@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_32"
+            android:title="Home"
+            />
+        <item
+            android:id="@+id/nav_music"
+            android:icon="@drawable/music_32"
+            android:title="Music"
+            />
+        <item
+            android:id="@+id/nav_reminders"
+            android:icon="@drawable/reminders_32"
+            android:title="Matters"
+            />
+        <item
+            android:id="@+id/nav_message"
+            android:icon="@drawable/message_32"
+            android:title="Message"
+            />
+    </group>
+
+    <item android:title="others">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/settings_32"
+                android:title="Settings"/>
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/about_32"
+                android:title="About us"/>
+        </menu>
+    </item>
+
+</menu>

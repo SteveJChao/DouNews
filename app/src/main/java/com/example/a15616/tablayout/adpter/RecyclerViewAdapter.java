@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.example.a15616.tablayout.R;
 import com.example.a15616.tablayout.activity.DetailActivity;
 import com.example.a15616.tablayout.activity.MainActivity;
+import com.example.a15616.tablayout.fragment.ListFragment;
 
 
 /**
@@ -21,7 +22,8 @@ import com.example.a15616.tablayout.activity.MainActivity;
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
 
     private Context context;
-    private Activity activity;
+    public static boolean flag = false;
+    protected Activity activity;
 
     /**
      * constructor
@@ -47,12 +49,10 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         mView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent intent = new Intent(activity, DetailActivity.class);
-                new MainActivity().startIntent();
+                startActivity();
             }
         });
     }
-
 
     @Override
     public int getItemCount() {
@@ -67,5 +67,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             mView = itemView;
         }
 
+    }
+
+    public void startActivity() {
+        activity.startActivity(new Intent(activity, DetailActivity.class));
     }
 }

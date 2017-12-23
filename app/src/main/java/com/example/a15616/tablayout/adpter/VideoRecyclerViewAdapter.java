@@ -93,7 +93,7 @@ public class VideoRecyclerViewAdapter extends RecyclerView.Adapter <VideoRecycle
 
     @Override
     public int getItemCount() {
-        return 13;
+        return 5;
     }
 
     @Override
@@ -154,5 +154,15 @@ public class VideoRecyclerViewAdapter extends RecyclerView.Adapter <VideoRecycle
         }
     }
 
-
+    /**
+     * view离开window时停止播放
+     * @param holder
+     */
+    @Override
+    public void onViewAttachedToWindow(Holder holder) {
+        super.onViewAttachedToWindow(holder);
+        if (videoView != null) {
+            videoView.suspend();
+        }
+    }
 }
