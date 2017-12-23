@@ -1,15 +1,20 @@
 package com.example.a15616.tablayout.activity;
 
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Build;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.widget.Button;
 
 import com.example.a15616.tablayout.adpter.MyFragmentStatePagerAdapter;
 import com.example.a15616.tablayout.fragment.ListFragment;
 import com.example.a15616.tablayout.R;
+import com.example.a15616.tablayout.fragment.VideoFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
     private TabLayout mTabLayout;
 
     private ViewPager mViewPager;
+
+    private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
 
         mViewPager = (ViewPager) findViewById(R.id.view_pager);
         initViewPager();
+
+
     }
 
     public void initViewPager() {
@@ -52,6 +61,9 @@ public class MainActivity extends AppCompatActivity {
             fragmentList.add(new ListFragment());
         }
 
+        fragmentList.remove(1);
+        fragmentList.add(1, new VideoFragment());
+
         //把viewPager和fragment加载到fragmentAdapter
         MyFragmentStatePagerAdapter mFragmentStatePagerAdapter =
                 new MyFragmentStatePagerAdapter(getSupportFragmentManager(), fragmentList, titleList);
@@ -59,4 +71,10 @@ public class MainActivity extends AppCompatActivity {
         mTabLayout.setupWithViewPager(mViewPager);
         mTabLayout.setTabsFromPagerAdapter(mFragmentStatePagerAdapter);
     }
+
+    public void startIntent() {
+        Intent intent = new Intent(MainActivity.this, DetailActivity.class);
+        startActivity(intent);
+    }
+
 }
