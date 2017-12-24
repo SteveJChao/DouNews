@@ -18,11 +18,10 @@
         android:layout_height="wrap_content"
         >
 
-        <VideoView
-            android:id="@+id/video_view"
-            android:layout_margin="1dp"
+        <cn.jzvd.JZVideoPlayerStandard
+            android:id="@+id/video_player"
             android:layout_width="match_parent"
-            android:layout_height="250dp" />
+            android:layout_height="200dp"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
