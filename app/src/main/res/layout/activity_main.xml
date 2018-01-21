@@ -26,16 +26,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-                <ImageButton
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="16dp"
-                    android:id="@+id/menu"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:src="@drawable/menu_16"
-                    android:background="@null"
-                    />
-
                 <android.support.v7.widget.Toolbar
                     android:id="@+id/tool_bar"
                     android:layout_width="match_parent"
