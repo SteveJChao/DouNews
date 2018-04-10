@@ -1,4 +1,4 @@
-package com.example.a15616.tablayout.activity;
+package com.example.a15616.DouNews.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-import com.example.a15616.tablayout.R;
+import com.example.a15616.DouNews.R;
 
 public class DetailActivity extends AppCompatActivity {
 

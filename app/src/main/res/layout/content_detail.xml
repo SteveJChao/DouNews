@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.a15616.tablayout.activity.DetailActivity"
+    tools:context="com.example.a15616.DouNews.activity.DetailActivity"
     tools:showIn="@layout/activity_detail">
 
     <TextView

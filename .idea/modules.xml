@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TabLayout.iml" filepath="$PROJECT_DIR$/TabLayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DouNews.iml" filepath="$PROJECT_DIR$/DouNews.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

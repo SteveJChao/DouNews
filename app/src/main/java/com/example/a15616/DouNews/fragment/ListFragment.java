@@ -1,7 +1,5 @@
-package com.example.a15616.tablayout.fragment;
+package com.example.a15616.DouNews.fragment;
 
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -12,10 +10,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.a15616.tablayout.R;
-import com.example.a15616.tablayout.activity.DetailActivity;
-import com.example.a15616.tablayout.activity.MainActivity;
-import com.example.a15616.tablayout.adpter.RecyclerViewAdapter;
+import com.example.a15616.DouNews.R;
+import com.example.a15616.DouNews.activity.DetailActivity;
+import com.example.a15616.DouNews.adpter.RecyclerViewAdapter;
 
 /**
  * Created by hungryao on 12/21/2017.

@@ -1,4 +1,4 @@
-package com.example.a15616.tablayout.adpter;
+package com.example.a15616.DouNews.adpter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

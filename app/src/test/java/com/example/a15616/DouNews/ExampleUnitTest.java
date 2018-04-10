@@ -1,4 +1,4 @@
-package com.example.a15616.tablayout;
+package com.example.a15616.DouNews;
 
 import org.junit.Test;
 

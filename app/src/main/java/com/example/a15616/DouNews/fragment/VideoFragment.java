@@ -1,4 +1,4 @@
-package com.example.a15616.tablayout.fragment;
+package com.example.a15616.DouNews.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,8 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.a15616.tablayout.R;
-import com.example.a15616.tablayout.adpter.VideoRecyclerViewAdapter;
+import com.example.a15616.DouNews.R;
+import com.example.a15616.DouNews.adpter.VideoRecyclerViewAdapter;
 
 /**
  * Created by hungryao on 12/22/2017.

@@ -1,8 +1,6 @@
-package com.example.a15616.tablayout.activity;
+package com.example.a15616.DouNews.activity;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
@@ -15,15 +13,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.Toast;
 
-import com.example.a15616.tablayout.adpter.MyFragmentStatePagerAdapter;
-import com.example.a15616.tablayout.fragment.ListFragment;
-import com.example.a15616.tablayout.R;
-import com.example.a15616.tablayout.fragment.VideoFragment;
+import com.example.a15616.DouNews.adpter.MyFragmentStatePagerAdapter;
+import com.example.a15616.DouNews.fragment.ListFragment;
+import com.example.a15616.DouNews.R;
+import com.example.a15616.DouNews.fragment.VideoFragment;
 
 import java.util.ArrayList;
 import java.util.List;

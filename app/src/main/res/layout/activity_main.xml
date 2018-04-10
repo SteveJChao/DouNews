@@ -11,7 +11,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.example.a15616.tablayout.activity.MainActivity"
+        tools:context="com.example.a15616.DouNews.activity.MainActivity"
         android:orientation="vertical"
         android:background="#EEEEEE"
         >
